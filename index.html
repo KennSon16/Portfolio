@@ -20,8 +20,69 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="header-text">
+            <p>Aspiring Software Engineer</p>
+            <h1>Hi, I'm <span>Kenn</span>! <br> I'm from California</h1>
+        </div>
     </div>
 </div>
+<!-- ----------------------------- ABOUT ----------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/GradPhoto1.jpg">
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="sub-title">About Me</h1> 
+                <p>I am a recent new grad of 2023. I love to code and problem solve on my spare time.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programing Languages</span><br> Java, Python, C++, JavaScript, R, Swift, Objective-C, Lua</li>
+                        <li><span>Technologies</span><br> Git/GitHub, Bash, HTML/CSS, Shell Scripting, 
+                            SQL/Microsoft SQL Server Management Studio, Pygame, JSwing, React, ExpressJS, MongoDB, NodeJS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Programing Languages</span><br> Java, Python, C++, JavaScript, R, Swift, Objective-C, Lua</li>
+                        <li><span>Technologies</span><br> Git/GitHub, Bash, HTML/CSS, Shell Scripting, 
+                            SQL/Microsoft SQL Server Management Studio, Pygame, JSwing, React, ExpressJS, MongoDB, NodeJS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019 - 2023</span><br> California State University, Fullerton</li>
+                        <li><span>2015 - 2019</span><br> La Quinta Highschool</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
 
 </body>
 </html>
