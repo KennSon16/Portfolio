@@ -13,16 +13,18 @@
     <div class="container">
         <nav>
             <img src="img/Kenn-logos_transparent_small.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
         <div class="header-text">
-            <p>Aspiring Software Engineer</p>
+            <p>Full Stack Software Engineer</p>
             <h1>Hi, I'm <span>Kenn</span>! <br> I'm from California</h1>
         </div>
     </div>
@@ -36,7 +38,15 @@
             </div>
             <div class="about-col-2"> 
                 <h1 class="sub-title">About Me</h1> 
-                <p>I recently graduated from California State University, Fullerton with a Bachelors of Science in Computer Science. I love to code and problem solve on my spare time.</p>
+                <p> Growing up in Southern California, I grew up playing a lot of mobile and video games! I had a terrible computer and 
+                    was always troubleshooting and learning why I got these errors upon download. In high school, I dived more into tech 
+                    learning how to create/host my servers, internet safety, modding games, and 3D modeling. I recently graduated from 
+                    California State University, Fullerton with a Bachelor of Science in Computer Science. Some hobbies I currently have 
+                    are Bouldering and Pickleball! I currently work at a Coding Center for students in grades K-12. I love positively 
+                    impacting others through sharing my knowledge now I want to take a step back to learn more and improve my abilities to 
+                    code in a work environment. In the future, I would love to step up in a company and lead others to success. I am 
+                    currently looking for a new home to contribute to!
+                </p>
 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -45,14 +55,14 @@
                 </div>
                 <div class="tab-contents active-tab" id="skills">
                     <ul>
-                        <li><span>Programing Languages</span><br> Java, Python, C++, JavaScript, R, Swift, Objective-C, Lua</li>
+                        <li><span>Programing Languages</span><br> Java, Python, C++, JavaScript, TypeScript, R, Swift, Objective-C, Lua</li>
                         <li><span>Technologies</span><br> Git/GitHub, Bash, HTML/CSS, Shell Scripting, 
-                            SQL/Microsoft SQL Server Management Studio, Pygame, JSwing, React, ExpressJS, MongoDB, NodeJS</li>
+                            SQL, Spring, Spring Boot, JDBC, Jackson, JPA, jQuery, Node, webpack, Babel, Maven, npm,  Pygame, JSwing, React, ExpressJS, MongoDB, NodeJS</li>
                     </ul>
                 </div>
                 <div class="tab-contents" id="experience">
                     <ul>
-                        <li><span>Nov 2023 - Present</span><br> Indie Game Developer</li>
+                        <li><span>June 2024 - Present</span><br> FastTrack Program</li>
                         <li><span>Sept 2023 - Present</span><br> Coding Instructor at Coding Minds Academy</li>
                         <li><span>May 2022 – Aug 2022</span><br> Information Security Student Assistant  at CSUF</li>
                     </ul>
@@ -75,27 +85,28 @@
         <div class="services-list">
             <div>
                 <i class="fa-solid fa-code"></i>
-                <h2> Side App </h2>
-                <p> Have you ever wanted to have quick and easy access to tools? This SideApp allows you to create/organize bookmarks and todo's.
-                    This will allow you to focus more on what is needed to be done as your everyday schduler! Aims to improve your focus on every task!
+                <h2> Twitter API </h2>
+                <p> Implemented an API that allow Users and Tweets to be created! When a user creates a tweets it will auto-generate hashtags and @mentions!
                 </p>
-                <a href="#"> Learn More! </a>
+                <a href="https://github.com/KennSon16/TwitterAPI" target="_blank"> Learn More! </a>
             </div>
             <div>
                 <i class="fa-solid fa-flask"></i>
-                <h2>Smite Simulator</h2>
-                <p>From the popular game, "League of Legends", a collaborated in a group to create a web app that creates simulation of the game to practice 
-                    a skill set for the game. This uses data from Riot Games API and Machine Learning to generate calculations and compare performance.
+                <h2>Team Manager App</h2>
+                <p>
+                    Create a company team management app that all uses to log in and see their company news feed and projects! 
+                    Admins will have the ability to create and assign users to companys, teams, and projects!
                 </p>
-                <a href="#">Learn more</a>
+                <a href="https://github.com/KennSon16/Team-Manager-App" target="_blank">Learn more!</a>
             </div>
             <div>
                 <i class="fa-solid fa-gamepad"> </i>
-                <h2> Land of Rogue </h2>
-                <p>Growing up I remember playing games on the web browser but as I grew up this market began to shrink. This project was created for
-                    that enjoyment for others to find! You can try a little demo here!
+                <h2>Audle</h2>
+                <p>
+                    A spin-ff of the hit online daily puzzle Wordle, I bring you Audle! This a wordle like game where you need to match 5 songs to the correct 
+                    audio using the SpotifyAPI.
                 </p>
-                <a href="#">Learn more</a>
+                <a href="https://github.com/KennSon16/Audle" target="_blank">Learn more</a>
             </div>
         </div>
     </div>
@@ -103,15 +114,41 @@
 
 <!-- --------------------------- PORTFOLIO --------------------------- -->
 <div id="portfolio">
-    <div class="container">
-        <div class="sub-title">My Work</div>
-        <div class="work-list">
-            <div class="work">
-                <img src="">
+    <div class="resume-container">
+        <h1 class="sub-title">Resume</h1>
+        <iframe src="resume.pdf" class="resume"></iframe>
+        <div><a href="resume.pdf" download class="btn"><i class="fa-solid fa-download"></i> Download Resume</a></div>
+    </div>
+</div>
+
+
+<!-- ---------------------------- CONTACT ---------------------------- -->
+ <div id = "contact">
+    <div class = "container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <img class="avatar" id="avatar" src="" alt="" border-radius=50%>
+                <p id="bio"></p>
+                <p><i class="fa-solid fa-paper-plane"></i> kennson1616@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/kennkappa/" target="_blank" ><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/kennson/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/KennSon16" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
-</div>
+ </div>
 
 <script>
     var tablinks = document.getElementsByClassName("tab-links");
@@ -128,6 +165,38 @@
         document.getElementById(tabname).classList.add("active-tab")
     }
 </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUtr3Br8aA1SEvP1F_CBzAEikRVezy3iYr5ATyVsvt_YkiwT3wWvc0pLK9InL4-1Jp/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('https://api.github.com/users/KennSon16')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('avatar').src = data.avatar_url;
+                document.getElementById('bio').textContent = data.bio;
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    });
+</script>
+
 
 </body>
 </html>
